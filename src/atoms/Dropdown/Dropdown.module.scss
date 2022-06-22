@@ -1,0 +1,35 @@
+.container {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    font-size: 2rem;
+    padding-top: .3rem;
+    border-radius: 2rem;
+    width: 100%;
+
+    .item {
+        display: flex;
+        padding: 1rem;
+        font-size: inherit;
+        position: relative;
+        &:not(:last-child):after {
+            position: absolute;
+            bottom: 0;
+            left: -1rem;
+            content: "";
+            border-bottom: .1rem solid #dbdbdb;
+            width: 100%;
+            margin: 0 1rem;
+         
+        }
+        p{
+            font-size: inherit;
+            margin-left: .5rem;
+        };
+        
+        .dropdownImg {
+            width: 3rem;
+        }
+    }
+
+
+}
